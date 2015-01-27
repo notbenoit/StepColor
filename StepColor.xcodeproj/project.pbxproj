@@ -7,28 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC1E0E161A72DA21001B8A1C /* StepColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1E0E151A72DA21001B8A1C /* StepColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC1E0E1C1A72DA21001B8A1C /* StepColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E0E101A72DA21001B8A1C /* StepColor.framework */; };
-		FC1E0E231A72DA21001B8A1C /* StepColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E0E221A72DA21001B8A1C /* StepColorTests.swift */; };
+		FC1E0E5A1A73D363001B8A1C /* StepColor_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E0E331A73CF65001B8A1C /* StepColor_Mac.framework */; };
+		FC1E0E891A73D646001B8A1C /* StepColor_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E0E101A72DA21001B8A1C /* StepColor_iOS.framework */; };
+		FC1E0E961A7843FB001B8A1C /* SColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E0E921A7843FB001B8A1C /* SColor.swift */; };
+		FC1E0E971A7843FB001B8A1C /* SColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E0E921A7843FB001B8A1C /* SColor.swift */; };
+		FC1E0E981A7843FB001B8A1C /* StepColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1E0E931A7843FB001B8A1C /* StepColor.h */; };
+		FC1E0E991A7843FB001B8A1C /* StepColor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1E0E931A7843FB001B8A1C /* StepColor.h */; };
+		FC1E0EA11A784407001B8A1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1E0E9C1A784407001B8A1C /* Info.plist */; };
+		FC1E0EA21A784407001B8A1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1E0E9C1A784407001B8A1C /* Info.plist */; };
+		FC1E0EA41A784407001B8A1C /* StepColor_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E0E9D1A784407001B8A1C /* StepColor_iOS_Tests.swift */; };
+		FC1E0EA51A784407001B8A1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1E0E9F1A784407001B8A1C /* Info.plist */; };
+		FC1E0EA61A784407001B8A1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1E0E9F1A784407001B8A1C /* Info.plist */; };
+		FC1E0EA71A784407001B8A1C /* StepColor_Mac_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1E0EA01A784407001B8A1C /* StepColor_Mac_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FC1E0E1D1A72DA21001B8A1C /* PBXContainerItemProxy */ = {
+		FC1E0E5B1A73D363001B8A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC1E0E071A72DA21001B8A1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC1E0E321A73CF65001B8A1C;
+			remoteInfo = StepColor_Mac;
+		};
+		FC1E0E8A1A73D646001B8A1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FC1E0E071A72DA21001B8A1C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FC1E0E0F1A72DA21001B8A1C;
-			remoteInfo = StepColor;
+			remoteInfo = StepColor_iOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC1E0E101A72DA21001B8A1C /* StepColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC1E0E141A72DA21001B8A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC1E0E151A72DA21001B8A1C /* StepColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepColor.h; sourceTree = "<group>"; };
-		FC1E0E1B1A72DA21001B8A1C /* StepColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC1E0E211A72DA21001B8A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC1E0E221A72DA21001B8A1C /* StepColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepColorTests.swift; sourceTree = "<group>"; };
+		FC1E0E101A72DA21001B8A1C /* StepColor_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepColor_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1E0E331A73CF65001B8A1C /* StepColor_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepColor_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1E0E541A73D363001B8A1C /* StepColor_Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StepColor_Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1E0E831A73D645001B8A1C /* StepColor_iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StepColor_iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1E0E911A7843FB001B8A1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1E0E921A7843FB001B8A1C /* SColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SColor.swift; sourceTree = "<group>"; };
+		FC1E0E931A7843FB001B8A1C /* StepColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepColor.h; sourceTree = "<group>"; };
+		FC1E0E9C1A784407001B8A1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1E0E9D1A784407001B8A1C /* StepColor_iOS_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepColor_iOS_Tests.swift; sourceTree = "<group>"; };
+		FC1E0E9F1A784407001B8A1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1E0EA01A784407001B8A1C /* StepColor_Mac_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepColor_Mac_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +60,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC1E0E181A72DA21001B8A1C /* Frameworks */ = {
+		FC1E0E2F1A73CF65001B8A1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC1E0E1C1A72DA21001B8A1C /* StepColor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E511A73D363001B8A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0E5A1A73D363001B8A1C /* StepColor_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E801A73D645001B8A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0E891A73D646001B8A1C /* StepColor_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +89,8 @@
 		FC1E0E061A72DA21001B8A1C = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E121A72DA21001B8A1C /* StepColor */,
-				FC1E0E1F1A72DA21001B8A1C /* StepColorTests */,
+				FC1E0E901A7843FB001B8A1C /* Source */,
+				FC1E0E9A1A784407001B8A1C /* Tests */,
 				FC1E0E111A72DA21001B8A1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,44 +98,49 @@
 		FC1E0E111A72DA21001B8A1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E101A72DA21001B8A1C /* StepColor.framework */,
-				FC1E0E1B1A72DA21001B8A1C /* StepColorTests.xctest */,
+				FC1E0E101A72DA21001B8A1C /* StepColor_iOS.framework */,
+				FC1E0E331A73CF65001B8A1C /* StepColor_Mac.framework */,
+				FC1E0E541A73D363001B8A1C /* StepColor_Mac Tests.xctest */,
+				FC1E0E831A73D645001B8A1C /* StepColor_iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC1E0E121A72DA21001B8A1C /* StepColor */ = {
+		FC1E0E901A7843FB001B8A1C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E151A72DA21001B8A1C /* StepColor.h */,
-				FC1E0E131A72DA21001B8A1C /* Supporting Files */,
+				FC1E0E911A7843FB001B8A1C /* Info.plist */,
+				FC1E0E921A7843FB001B8A1C /* SColor.swift */,
+				FC1E0E931A7843FB001B8A1C /* StepColor.h */,
 			);
-			path = StepColor;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		FC1E0E131A72DA21001B8A1C /* Supporting Files */ = {
+		FC1E0E9A1A784407001B8A1C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E141A72DA21001B8A1C /* Info.plist */,
+				FC1E0E9B1A784407001B8A1C /* StepColor_iOS Tests */,
+				FC1E0E9E1A784407001B8A1C /* StepColor_Mac Tests */,
 			);
-			name = "Supporting Files";
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		FC1E0E1F1A72DA21001B8A1C /* StepColorTests */ = {
+		FC1E0E9B1A784407001B8A1C /* StepColor_iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E221A72DA21001B8A1C /* StepColorTests.swift */,
-				FC1E0E201A72DA21001B8A1C /* Supporting Files */,
+				FC1E0E9C1A784407001B8A1C /* Info.plist */,
+				FC1E0E9D1A784407001B8A1C /* StepColor_iOS_Tests.swift */,
 			);
-			path = StepColorTests;
+			path = "StepColor_iOS Tests";
 			sourceTree = "<group>";
 		};
-		FC1E0E201A72DA21001B8A1C /* Supporting Files */ = {
+		FC1E0E9E1A784407001B8A1C /* StepColor_Mac Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FC1E0E211A72DA21001B8A1C /* Info.plist */,
+				FC1E0E9F1A784407001B8A1C /* Info.plist */,
+				FC1E0EA01A784407001B8A1C /* StepColor_Mac_Tests.swift */,
 			);
-			name = "Supporting Files";
+			path = "StepColor_Mac Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,16 +150,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC1E0E161A72DA21001B8A1C /* StepColor.h in Headers */,
+				FC1E0E981A7843FB001B8A1C /* StepColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E301A73CF65001B8A1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0E991A7843FB001B8A1C /* StepColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FC1E0E0F1A72DA21001B8A1C /* StepColor */ = {
+		FC1E0E0F1A72DA21001B8A1C /* StepColor_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC1E0E261A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColor" */;
+			buildConfigurationList = FC1E0E261A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_iOS" */;
 			buildPhases = (
 				FC1E0E0B1A72DA21001B8A1C /* Sources */,
 				FC1E0E0C1A72DA21001B8A1C /* Frameworks */,
@@ -129,27 +178,63 @@
 			);
 			dependencies = (
 			);
-			name = StepColor;
+			name = StepColor_iOS;
 			productName = StepColor;
-			productReference = FC1E0E101A72DA21001B8A1C /* StepColor.framework */;
+			productReference = FC1E0E101A72DA21001B8A1C /* StepColor_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC1E0E1A1A72DA21001B8A1C /* StepColorTests */ = {
+		FC1E0E321A73CF65001B8A1C /* StepColor_Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC1E0E291A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColorTests" */;
+			buildConfigurationList = FC1E0E461A73CF65001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_Mac" */;
 			buildPhases = (
-				FC1E0E171A72DA21001B8A1C /* Sources */,
-				FC1E0E181A72DA21001B8A1C /* Frameworks */,
-				FC1E0E191A72DA21001B8A1C /* Resources */,
+				FC1E0E2E1A73CF65001B8A1C /* Sources */,
+				FC1E0E2F1A73CF65001B8A1C /* Frameworks */,
+				FC1E0E301A73CF65001B8A1C /* Headers */,
+				FC1E0E311A73CF65001B8A1C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FC1E0E1E1A72DA21001B8A1C /* PBXTargetDependency */,
 			);
-			name = StepColorTests;
-			productName = StepColorTests;
-			productReference = FC1E0E1B1A72DA21001B8A1C /* StepColorTests.xctest */;
+			name = StepColor_Mac;
+			productName = "StepColor-Mac";
+			productReference = FC1E0E331A73CF65001B8A1C /* StepColor_Mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC1E0E531A73D363001B8A1C /* StepColor_Mac Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1E0E5D1A73D363001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_Mac Tests" */;
+			buildPhases = (
+				FC1E0E501A73D363001B8A1C /* Sources */,
+				FC1E0E511A73D363001B8A1C /* Frameworks */,
+				FC1E0E521A73D363001B8A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC1E0E5C1A73D363001B8A1C /* PBXTargetDependency */,
+			);
+			name = "StepColor_Mac Tests";
+			productName = "StepColor_Mac Tests";
+			productReference = FC1E0E541A73D363001B8A1C /* StepColor_Mac Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC1E0E821A73D645001B8A1C /* StepColor_iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1E0E8C1A73D646001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_iOS Tests" */;
+			buildPhases = (
+				FC1E0E7F1A73D645001B8A1C /* Sources */,
+				FC1E0E801A73D645001B8A1C /* Frameworks */,
+				FC1E0E811A73D645001B8A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC1E0E8B1A73D646001B8A1C /* PBXTargetDependency */,
+			);
+			name = "StepColor_iOS Tests";
+			productName = "StepColor_iOS Tests";
+			productReference = FC1E0E831A73D645001B8A1C /* StepColor_iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +249,13 @@
 					FC1E0E0F1A72DA21001B8A1C = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					FC1E0E1A1A72DA21001B8A1C = {
+					FC1E0E321A73CF65001B8A1C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FC1E0E531A73D363001B8A1C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FC1E0E821A73D645001B8A1C = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -181,8 +272,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC1E0E0F1A72DA21001B8A1C /* StepColor */,
-				FC1E0E1A1A72DA21001B8A1C /* StepColorTests */,
+				FC1E0E0F1A72DA21001B8A1C /* StepColor_iOS */,
+				FC1E0E321A73CF65001B8A1C /* StepColor_Mac */,
+				FC1E0E531A73D363001B8A1C /* StepColor_Mac Tests */,
+				FC1E0E821A73D645001B8A1C /* StepColor_iOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,10 +288,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC1E0E191A72DA21001B8A1C /* Resources */ = {
+		FC1E0E311A73CF65001B8A1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E521A73D363001B8A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0EA51A784407001B8A1C /* Info.plist in Resources */,
+				FC1E0EA11A784407001B8A1C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E811A73D645001B8A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0EA61A784407001B8A1C /* Info.plist in Resources */,
+				FC1E0EA21A784407001B8A1C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,24 +320,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1E0E961A7843FB001B8A1C /* SColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC1E0E171A72DA21001B8A1C /* Sources */ = {
+		FC1E0E2E1A73CF65001B8A1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC1E0E231A72DA21001B8A1C /* StepColorTests.swift in Sources */,
+				FC1E0E971A7843FB001B8A1C /* SColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E501A73D363001B8A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0EA71A784407001B8A1C /* StepColor_Mac_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1E0E7F1A73D645001B8A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1E0EA41A784407001B8A1C /* StepColor_iOS_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FC1E0E1E1A72DA21001B8A1C /* PBXTargetDependency */ = {
+		FC1E0E5C1A73D363001B8A1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC1E0E0F1A72DA21001B8A1C /* StepColor */;
-			targetProxy = FC1E0E1D1A72DA21001B8A1C /* PBXContainerItemProxy */;
+			target = FC1E0E321A73CF65001B8A1C /* StepColor_Mac */;
+			targetProxy = FC1E0E5B1A73D363001B8A1C /* PBXContainerItemProxy */;
+		};
+		FC1E0E8B1A73D646001B8A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC1E0E0F1A72DA21001B8A1C /* StepColor_iOS */;
+			targetProxy = FC1E0E8A1A73D646001B8A1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,34 +452,121 @@
 		FC1E0E271A72DA21001B8A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StepColor/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FC1E0E281A72DA21001B8A1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StepColor/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		FC1E0E2A1A72DA21001B8A1C /* Debug */ = {
+		FC1E0E471A73CF65001B8A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC1E0E481A73CF65001B8A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC1E0E5E1A73D363001B8A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StepColor_Mac Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC1E0E5F1A73D363001B8A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StepColor_Mac Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC1E0E8D1A73D646001B8A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -357,20 +577,20 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = StepColorTests/Info.plist;
+				INFOPLIST_FILE = "StepColor_iOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FC1E0E2B1A72DA21001B8A1C /* Release */ = {
+		FC1E0E8E1A73D646001B8A1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = StepColorTests/Info.plist;
+				INFOPLIST_FILE = "StepColor_iOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -388,19 +608,37 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC1E0E261A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColor" */ = {
+		FC1E0E261A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC1E0E271A72DA21001B8A1C /* Debug */,
 				FC1E0E281A72DA21001B8A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FC1E0E291A72DA21001B8A1C /* Build configuration list for PBXNativeTarget "StepColorTests" */ = {
+		FC1E0E461A73CF65001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC1E0E2A1A72DA21001B8A1C /* Debug */,
-				FC1E0E2B1A72DA21001B8A1C /* Release */,
+				FC1E0E471A73CF65001B8A1C /* Debug */,
+				FC1E0E481A73CF65001B8A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1E0E5D1A73D363001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_Mac Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1E0E5E1A73D363001B8A1C /* Debug */,
+				FC1E0E5F1A73D363001B8A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC1E0E8C1A73D646001B8A1C /* Build configuration list for PBXNativeTarget "StepColor_iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1E0E8D1A73D646001B8A1C /* Debug */,
+				FC1E0E8E1A73D646001B8A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
