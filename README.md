@@ -22,7 +22,7 @@ $ gem install cocoapods --pre
 
 To add `StepColor` to your project, add this line to your  `Podfile` (WIP on develop branch) :
 
-```
+```ruby
 pod 'StepColor', :git => 'https://github.com/notbenoit/StepColor.git', :branch => 'develop'
 ```
 
@@ -41,7 +41,7 @@ There are several ways you can create a SColor.
 - With an inifinite list of UIColor/NScolor :
 
 
-```
+```swift
 SColor(colors: NSColor.redColor(), NSColor.blueColor(), NSColor.orangeColor)
 ```
 
@@ -49,7 +49,7 @@ The colors will be evenly spread between the start (0.0) and end (1.0) of the gr
 
 - With an array of colors and the corresponding steps :
 
-```
+```swift
 SColor(colors: [NSColor.redColor(), NSColor.blueColor()], steps: [0.3, 0.9])
 ```
 
@@ -59,7 +59,7 @@ You must provide exactly the same number of colors and step when you inkoke this
 ### Picking a color
 There is a single method to pick a color (UIColor or NSColor depending on your platform).
 
-```
+```swift
 let stepColor = SColor(colors: [NSColor.redColor(), NSColor.blueColor()], steps: [0.0, 1.0])
 let halfColor = stepColor.colorForStep(0.5)
 ```

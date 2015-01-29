@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Benoit Layer. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 import XCTest
 import StepColor
 
