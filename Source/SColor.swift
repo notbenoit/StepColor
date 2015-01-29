@@ -20,7 +20,7 @@
 
 import Foundation
 
-// Because I an't force anyone to use the 'Color' type, this us only used internally.
+// Because I can't force anyone to use the 'Color' type, this us only used internally.
 #if os(iOS)
     import UIKit
     typealias Color = UIColor
