@@ -24,7 +24,7 @@ import Foundation
 #if os(iOS)
     import UIKit
     typealias Color = UIColor
-    #else
+#else
     import AppKit
     typealias Color = NSColor
 #endif
@@ -82,8 +82,9 @@ public class SColor {
             }
         } else {
             // Create default steps
+            let stepOffset: CGFloat = 1.0/CGFloat(max((colors.count-1), 1))
             for (index, color) in enumerate(colors) {
-                stepColors.append((ColorStep(color: color, step: CGFloat(index)/CGFloat(colors.count))))
+                stepColors.append((ColorStep(color: color, step: CGFloat(stepOffset*CGFloat(index)))))
             }
         }
         self.init(colors: stepColors)

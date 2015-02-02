@@ -42,7 +42,8 @@ class StepColor_iOS_Tests: XCTestCase {
     }
     
     func testMiddleRedBlueColor() {
-        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()], steps: [0.0, 1.0])
+        //Test with default steps
+        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()])
         let halfColor = stepColor.colorForStep(0.5)
         var red: CGFloat = 0.0
         halfColor.getRed(&red, green: nil, blue: nil, alpha: nil)
@@ -51,7 +52,8 @@ class StepColor_iOS_Tests: XCTestCase {
     }
     
     func testLeftRedColor() {
-        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()], steps: [0.0, 1.0])
+        //Test with default steps
+        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()])
         let halfColor = stepColor.colorForStep(0.0)
         var red: CGFloat = 0.0
         halfColor.getRed(&red, green: nil, blue: nil, alpha: nil)
@@ -60,7 +62,8 @@ class StepColor_iOS_Tests: XCTestCase {
     }
     
     func testRightBlueColor() {
-        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()], steps: [0.0, 1.0])
+        //Test with default steps
+        let stepColor = SColor(colors: [UIColor.redColor(), UIColor.blueColor()])
         let halfColor = stepColor.colorForStep(1.0)
         var red: CGFloat = 0.0
         halfColor.getRed(&red, green: nil, blue: nil, alpha: nil)
