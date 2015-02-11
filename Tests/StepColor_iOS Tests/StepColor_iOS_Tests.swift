@@ -70,4 +70,13 @@ class StepColor_iOS_Tests: XCTestCase {
         println("Red : \(red)")
         XCTAssert(red == 0.0, "Pass")
     }
+    
+    func testMidleColor() {
+        let stepColor = SColor(colors: UIColor.orangeColor(), UIColor.greenColor(), UIColor.redColor(), UIColor.redColor(), UIColor.redColor())
+        var red: CGFloat = 0.0
+        let halfColor = stepColor.colorForStep(0.5)
+        halfColor.getRed(&red, green: nil, blue: nil, alpha: nil)
+        println("Red : \(red)")
+        XCTAssert(red == 1, "Pass")
+    }
 }

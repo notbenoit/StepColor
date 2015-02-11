@@ -102,17 +102,20 @@ public class SColor {
         var previousColor: ColorStep!
         var nextColor: ColorStep!
         
-        // Enumerate all keys
         let sortedKeys = sorted(stepColorMap.keys, <)
-        for (index, key) in enumerate(sortedKeys) {
-            if step > key {
-                previousColor = ColorStep(color: stepColorMap[key]!, step: key)
-                if index+1 < sortedKeys.count {
-                    let nextKey = sortedKeys[index+1]
-                    nextColor = ColorStep(color: stepColorMap[nextKey]!, step: nextKey)
-                }
-                break;
-            }
+        
+        var i: Int = 0
+        while (i < sortedKeys.count && step >= sortedKeys[i]) {
+            let key = sortedKeys[i]
+            previousColor = ColorStep(color: stepColorMap[key]!, step: key)
+            i++
+        }
+        
+        i = max(0, sortedKeys.count - 1)
+        while (i >= 0 && step < sortedKeys[i]) {
+            let key = sortedKeys[i]
+            nextColor = ColorStep(color: stepColorMap[key]!, step: key)
+            i--
         }
         
         // If no previous color, return the first color
